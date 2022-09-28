@@ -1,1 +1,1 @@
-Simple landing page to show my projects.
+Simple landing page to show my projects and get hired.
