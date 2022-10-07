@@ -463,6 +463,40 @@ form div:not(div:last-of-type) {
 
 /* 
 
+Small devices (mobile, 360px and down)
+
+*/
+@media (max-width: 360px) {
+    .bg-img-wrap {
+        width: 700%;
+    }
+}
+
+/* 
+
+Small devices (landscape phones, 576px and up)
+
+*/
+@media (min-width: 576px) {
+    .bg-img-wrap {
+        width: 250%;
+    }
+}
+/* 
+
+Medium devices (tablets, 768px and up)
+
+*/
+@media (min-width: 768px) {
+    .bg-img-wrap {
+        width: 180%;
+    }
+    .overflow-md-visible {
+        overflow: visible!important;
+    }
+}
+/* 
+
 Large devices (desktops, 992px and up)
 
 */
@@ -487,6 +521,10 @@ Large devices (desktops, 992px and up)
         rotateY(-18deg)
         translateX(-5%)
         translateY(0);
+    }
+    .bg-img-wrap {
+        width: 150%;
+        left: -25%;
     }
 }
 
