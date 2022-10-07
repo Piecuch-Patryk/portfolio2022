@@ -53,6 +53,7 @@ header {
 }
 .text-section {
     position: relative;
+    z-index: 3;
     text-align: center;
     transform:
     perspective(1000px)
@@ -109,8 +110,11 @@ h1 {
     animation: expand 1.2s ease-in-out normal forwards 2.5s;
 }
 #svg601 {
+    /* position: relative; */
+    /* z-index: 2; */
     width: 100%;
     transform: translateX(-50px);
+    transform: scale(1.5);
 }
 
 @keyframes expand {
@@ -455,4 +459,84 @@ form div:not(div:last-of-type) {
     cursor: pointer;
     background-color: rgba(74, 74, 255, .95);
     color: #ddd;
+}
+
+/* 
+
+Large devices (desktops, 992px and up)
+
+*/
+@media screen and (min-width: 992px) {
+    .img-outer {
+        transform:
+        perspective(1000px)
+        rotateY(18deg)
+        translateX(-5%)
+        translateY(0);
+    }
+    .tilted {
+        transform:
+        perspective(1000px)
+        rotateY(-18deg)
+        translateX(5%)
+        translateY(0);
+    }
+    .cube__nav {
+        transform:
+        perspective(1000px)
+        rotateY(-18deg)
+        translateX(-5%)
+        translateY(0);
+    }
+}
+
+/* 
+
+X-Large devices (large desktops, 1200px and up)
+
+*/
+@media (min-width: 1200px) {
+    .scene {
+        width: 500px;
+        height: 500px;
+        }
+        
+        .cube {
+        width: 500px;
+        height: 500px;
+        transform: translateZ(-300px);
+        transition: transform 1s;
+        }
+        .cube {
+            transform: translateZ(-100px) rotateY(20deg) rotateX(30deg);
+        }
+        
+        .cube.show-front  { transform: translateZ(-300px) rotateY(   0deg); }
+        .cube.show-right  { transform: translateZ(-300px) rotateY( -90deg); }
+        .cube.show-back   { transform: translateZ(-300px) rotateY(-180deg); }
+        .cube.show-left   { transform: translateZ(-300px) rotateY(  90deg); }
+        .cube.show-top    { transform: translateZ(-300px) rotateX( -90deg); }
+        .cube.show-bottom { transform: translateZ(-300px) rotateX(  90deg); }
+        
+        .cube__face {
+        width: 500px;
+        height: 500px;
+        line-height: 500px;
+        }
+        
+    .cube__face--front  { transform: rotateY(  0deg) translateZ(300px); }
+    .cube__face--right  { transform: rotateY( 90deg) translateZ(300px); }
+    .cube__face--back   { transform: rotateY(180deg) translateZ(300px); }
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(300px); }
+    .cube__face--top    { transform: rotateX( 90deg) translateZ(300px); }
+    .cube__face--bottom { transform: rotateX(-90deg) translateZ(300px); }
+}
+
+/* 
+
+XX-Large devices (larger desktops, 1400px and up)
+
+*/
+@media (min-width: 1400px) {
+    
 }

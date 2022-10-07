@@ -13,13 +13,13 @@
   <body>
 
    <!-- Page Nav -->
-   <nav class="navbar navbar-expand-md navbar-light bg-primary">
+   <nav class="navbar navbar-expand-sm navbar-light bg-primary">
       <div class="container-fluid">
       <button class="navbar-toggler ms-auto me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mb-lg-0 text-center">
+         <ul class="navbar-nav mx-sm-auto mb-lg-0 text-center">
             <li class="nav-item my-2 mx-5">
                <a class="nav-link p-0 active text-light" aria-current="page" href="#about">About</a>
             </li>
@@ -35,16 +35,16 @@
    </nav>
 
    <!-- Header -->
-   <header class="container-fluid py-5">
-      <div class="row align-items-center justify-content-center mt-5">
-         <div class="col-10 col-lg-5 p-4 mt-5 text-center text-section fadeIn">
+   <header class="container-fluid py-5 overflow-hidden">
+      <div class="row align-items-center align-items-sm-start justify-content-sm-start justify-content-center mt-5">
+         <div class="col-10 col-sm-6 col-lg-4 col-xxl-3 p-4 ms-5 mt-5 ms-xxl-auto me-xxl-0 text-center text-section fadeIn">
             <h1 class="mb-0 fw-bold fadeIn fadeDown">Hi! I am Patryk</h1>
             <p class="text-light mb-2 fadeIn fadeDown">Junior Full-Stack Developer</p>
             <p class="fs-5 text-light fadeIn fadeDown">
                I <span class="text-decor">design and develop</span> amazing web applications. Some of my recent projects are listed below.
             </p>
          </div>
-         <div class="d-none col-lg-6 pt-5 fadeIn fadeDown">
+         <div class="d-none d-sm-block col-sm-4 col-lg-5 pt-5 ms-lg-auto me-lg-5 pe-lg-5 fadeIn fadeDown">
                <svg
                   width="865.76"
                   height="682.89"
@@ -1066,14 +1066,14 @@
    </header>
 
    <!-- Article -->
-   <article id="about" class="container py-5">
-      <div class="row align-items-center pt-5">
-         <div class="col-10 col-md-12 mx-auto col-lg-6 p-0">
+   <article id="about" class="container-fluid py-5">
+      <div class="row align-items-center pt-5 px-lg-4 py-xxl-5">
+         <div class="col-10 col-md-10 col-lg-5 mx-auto p-0">
             <div class="img-outer">
                <img class="img-fluid" src="./assets/img/web-design-2188728_1920.png" alt="" srcset="">
             </div>
          </div>
-         <div class="col-10 col-md-12 mx-auto col-lg-6 p-0 mt-5">
+         <div class="col-10 col-md-10 col-lg-5 mx-auto p-0 mt-5 mt-lg-0">
             <div class="p-3 tilted">
                <p class="mb-0">Fully responsive websites and web applications. Small and large projects. Maintaining codes or designing from scratch. Self-taught person with <span class="word-decor">commercial experience</span> in <span class="laravel">Laravel</span> and <span class="magento">Magento2</span>.</p>
             </div>
@@ -1083,8 +1083,8 @@
 
    <!-- Main -->
    <main id="main" class="container-fluid py-3">
-      <div class="row">
-         <div class="col-12 col-lg-9 overflow-hidden">
+      <div class="row align-items-lg-center py-xxl-5">
+         <div class="col-12 col-lg-8 col-xxl-9 py-xxl-5 overflow-hidden">
             <div class="scene mx-auto">
                <div class="cube">
                   <div class="cube__face cube__face--front">
@@ -1093,7 +1093,7 @@
                      </div>
                   </div>
                   <div class="cube__face cube__face--back d-flex align-items-center">
-                     <p class="text-light lh-base p-2 fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum maiores, accusantium sint fuga id aliquid placeat corrupti odio amet, magnam odit ut consectetur.</p>
+                     <p class="text-light lh-base p-2 p-xl-5 fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum maiores, accusantium sint fuga id aliquid placeat corrupti odio amet, magnam odit ut consectetur.</p>
                   </div>
                   <div class="cube__face cube__face--right lh-base d-flex justify-content-center flex-column">
                      <h4 class="py-1 fw-bold">Technologies</h4>
@@ -1116,7 +1116,7 @@
             </div>
          </div>
          <!-- main content nav -->
-         <div class="col-10 col-lg-3 mx-auto">
+         <div class="col-10 col-md-5 col-lg-3 col-xxl-2">
             <ul class="radio-group cube__nav p-3 overflow-hidden">
                <li>
                   <input id="front" class="d-none" type="radio" name="rotate-cube-side" value="front" checked />
@@ -1154,7 +1154,7 @@
       </div>
       <div class="container py-3">
          <div class="row">
-            <div class="col-11 col-lg-8 mx-auto">
+            <div class="col-11 col-md-8 col-lg-6 col-xxl-5 mx-auto">
                <form action="">
                   <div class="m-4">
                      <input name="name" class="form-control text-light input-name p-2" type="text" placeholder="Name">
