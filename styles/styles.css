@@ -128,7 +128,7 @@ h1 {
 .btn-header {
     position: fixed;
     bottom: 2rem;
-    right: .2rem;
+    right: 0;
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 5rem;
@@ -139,12 +139,12 @@ h1 {
     text-align: center;
     box-shadow: 0 3px 5px rgba(0,0,0,.5);
     overflow: hidden;
-    transform: translateX(-50vw);
+    transform: translateX(calc(-50vw + 3.75rem));
     transition: 
         transform .5s ease-in-out, 
         background-color .2s ease-in-out, 
         width .2s ease-in-out,
-        opacity .5s ease-in-out 1s;
+        opacity .2s ease-in-out 1s;
     z-index: 100;
 }
 .btn-header:hover {
@@ -153,11 +153,11 @@ h1 {
     background-color: rgba(74, 74, 255, .95);
 }
 .btn-header.colapsed {
-    transform: translateX(0);
+    transform: translateX(-.5rem);
 }
 .btn-header.expanded {
-    transform: translateX(calc(-50vw + 4rem));
-    width: 6rem;
+    transform: translateX(calc(-50vw + 3.75rem));
+    width: 7.5rem;
 }
 .btn-icon {
     display: block;
@@ -434,7 +434,7 @@ footer {
 .input-textarea::placeholder {
     color: #ddd;
 }
-form div {
+form div:not(div:last-of-type) {
     box-shadow:
         rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
         rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
@@ -444,4 +444,15 @@ form div {
     rgba(213, 220, 226, .7)
     rgba(213, 220, 226, .7)
     rgba(184, 194, 204, .7);
+}
+.btn-footer {
+    background-color: rgba(5,121,246,1);
+    transition: .2s ease-in;
+    color: #ddd;
+    box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+.btn-footer:hover {
+    cursor: pointer;
+    background-color: rgba(74, 74, 255, .95);
+    color: #ddd;
 }
