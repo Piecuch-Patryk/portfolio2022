@@ -4,8 +4,8 @@ let btnState = true; // true == expanded
 function toggleEl() {
     $('#btn-header').toggleClass('expanded');
     $('#btn-header').toggleClass('colapsed');
-    $('.btn-icon').fadeToggle(300);
-    $('.btn-text').fadeToggle(300);
+    $('.btn-icon').stop().fadeToggle(300);
+    $('.btn-text').stop().fadeToggle(300);
 }
 
 function btnInit() {
